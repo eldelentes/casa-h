@@ -29,3 +29,12 @@
     div.removeAttribute('data-src');
   };
 });
+
+$(window).scroll(function(){
+  console.log()
+  if ($(this).scrollTop() > 100) {
+    $('.mainHeader').addClass('bg-white');
+  } else {
+    $('.mainHeader').removeClass('bg-white');
+  }
+})
